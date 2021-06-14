@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryCustomActivity">
+
+    <include
+        android:id="@+id/toolbar_history_custom"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_history_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar_history_custom"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bookos"
+            android:gravity="center"
+            android:text="SCORE"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_view_history_custom_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bookos"
+            android:gravity="center"
+            android:text="10 / 10"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject:"
+            android:textSize="10sp"
+            android:fontFamily="@font/acme_regular"
+            />
+
+        <TextView
+            android:id="@+id/text_view_history_custom_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bookos"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="General Engineering and Applied Sciences"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz Title:"
+            android:textSize="10sp"
+            android:fontFamily="@font/acme_regular"
+            />
+
+        <TextView
+            android:id="@+id/text_view_history_custom_quiz_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bookos"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="Sample Quiz"
+            android:textColor="@color/colorBlack"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_history_custom_questions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_layout_history_custom"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_custom_quiz_info_preview"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_custom_quiz_info_preview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_custom_quiz_info_preview"
+            android:orientation="vertical">
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/acme_regular"-->
+<!--                android:paddingHorizontal="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:text="Number of Questions:"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/custom_quiz_info_preview_noq"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/times"-->
+<!--                android:paddingLeft="25dp"-->
+<!--                android:paddingRight="5dp"-->
+<!--                android:text="100"-->
+<!--                android:textSize="18sp" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme_regular"
+                android:padding="5dp"
+                android:text="Subject:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/custom_quiz_info_preview_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times"
+                android:paddingVertical="5dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="5dp"
+                android:text="General Engineering and Applied Sciences"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme_regular"
+                android:padding="5dp"
+                android:text="Sources:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/custom_quiz_info_preview_sources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times"
+                android:lineSpacingExtra="10dp"
+                android:paddingVertical="5dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="5dp"
+                android:text="(1) Forouzan\n(2) Blake"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme_regular"
+                android:padding="5dp"
+                android:text="Categories:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/custom_quiz_info_preview_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times"
+                android:lineSpacingExtra="10dp"
+                android:paddingVertical="5dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="5dp"
+                android:text="(1) Network Models\n(2) Introduction to Communications System and Technology"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/custom_quiz_info_preview_btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boarder_green"
+        android:fontFamily="@font/acme_regular"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+</RelativeLayout>

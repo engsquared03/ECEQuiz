@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relative_layout_result_question_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="210dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/result_question_item_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/times"
+            android:freezesText="true"
+            android:gravity="left"
+            android:text="1. Why was the OSI model developed?"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/result_question_item_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result_question_item_question"
+            android:fontFamily="@font/times"
+            android:freezesText="true"
+            android:paddingVertical="3dp"
+            android:paddingLeft="5dp"
+            android:text="@string/option1"
+            android:textColor="@color/colorBlack"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/result_question_item_question" />
+
+        <TextView
+            android:id="@+id/result_question_item_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result_question_item_option1"
+            android:layout_marginVertical="2dp"
+            android:fontFamily="@font/times"
+            android:freezesText="true"
+            android:paddingVertical="3dp"
+            android:paddingLeft="5dp"
+            android:text="@string/option2"
+            android:textColor="@color/colorBlack"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/result_question_item_option1" />
+
+        <TextView
+            android:id="@+id/result_question_item_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result_question_item_option2"
+            android:layout_marginVertical="2dp"
+            android:fontFamily="@font/times"
+            android:freezesText="true"
+            android:paddingVertical="3dp"
+            android:paddingLeft="5dp"
+            android:text="@string/option3"
+            android:textColor="@color/colorBlack"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/result_question_item_option2" />
+
+        <TextView
+            android:id="@+id/result_question_item_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result_question_item_option3"
+            android:fontFamily="@font/times"
+            android:freezesText="true"
+            android:paddingVertical="3dp"
+            android:paddingLeft="5dp"
+            android:text="@string/option4"
+            android:textColor="@color/colorBlack"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/result_question_item_option3" />
+
+        <TextView
+            android:id="@+id/result_question_item_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:alpha="0.6"
+            android:background="@drawable/correct"
+            android:freezesText="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_view_notes"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/notes_icon_80"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_view_edit_question"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/edit_icon_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

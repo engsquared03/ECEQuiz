@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryListActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_history_2"
+        layout="@layout/toolbar"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/TabLayoutTheme"
+        android:background="@color/colorGreen"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorTabIndicator"
+        app:tabTextColor="@color/colorWhite"
+        android:id="@+id/history_tab_layout">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/history_view_pager"
+        ></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

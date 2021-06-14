@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ECE Quiz</string>
+    <string name="option1">A. The rate of data transfer was increasing exponentially</string>
+    <string name="option2">B. Standards were needed to allow any two systems to communicate</string>
+    <string name="option3">C. Manufacturers disliked the TCP/IP protocol suite.</string>
+    <string name="option4">D. None of the above</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatsPerformanceActivity">
+
+    <include
+        android:id="@+id/toolbar_stats_performance"
+        layout="@layout/toolbar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/stats_performance_layout_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progress_bar_stats_performance"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/circle_percentage_display"
+            android:secondaryProgress="100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_stats_performance_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme_regular"
+            android:text="0%"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/progress_bar_stats_performance"
+            app:layout_constraintEnd_toEndOf="@+id/progress_bar_stats_performance"
+            app:layout_constraintStart_toStartOf="@+id/progress_bar_stats_performance"
+            app:layout_constraintTop_toTopOf="@id/progress_bar_stats_performance" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stats_performance_layout_progress_bar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme_regular"
+            android:paddingLeft="20dp"
+            android:text="Subject"
+            />
+
+
+        <Spinner
+            android:id="@+id/stats_performance_spinner_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme_regular"
+            android:paddingLeft="20dp"
+            android:text="Source" />
+
+        <Spinner
+            android:id="@+id/stats_performance_spinner_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme_regular"
+            android:paddingLeft="20dp"
+            android:text="Category" />
+
+        <Spinner
+            android:id="@+id/stats_performance_spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"></Spinner>
+
+    </LinearLayout>
+
+</RelativeLayout>

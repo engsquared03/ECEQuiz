@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "881494792083",
+    "firebase_url": "https://ece-quiz-1c8d7.firebaseio.com",
+    "project_id": "ece-quiz-1c8d7",
+    "storage_bucket": "ece-quiz-1c8d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881494792083:android:38eed619fd1d5763cfba66",
+        "android_client_info": {
+          "package_name": "com.thesisapplication.ecequiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881494792083-dui16ulpug6smv10i5l49i0scrgp03v0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thesisapplication.ecequiz",
+            "certificate_hash": "6cb76239640b7dc2cdd6b30ca20efbf5466ea749"
+          }
+        },
+        {
+          "client_id": "881494792083-ujne402kktof0ac1l4qf0eltet8cq3v6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8XfI2MrAZVeg7Ffx5fbgjkHy7l-OOoF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881494792083-ujne402kktof0ac1l4qf0eltet8cq3v6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

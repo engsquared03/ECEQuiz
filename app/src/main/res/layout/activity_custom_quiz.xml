@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CustomQuizActivity">
+
+    <include
+        android:id="@+id/toolbar_custom_quiz"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/custom_quiz_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_custom_quiz"
+        android:fontFamily="@font/acme_regular"
+        android:gravity="center"
+        android:text="General Engineering and Applied Sciences"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/custom_quiz_text_answered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_quiz_subject"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bookos"
+        android:gravity="center"
+        android:text="Answered"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/custom_quiz_number_of_questions_answered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_quiz_text_answered"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bookos"
+        android:gravity="center"
+        android:text="50 / 50"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_custom_quiz_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_below="@id/custom_quiz_number_of_questions_answered"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:id="@+id/custom_quiz_btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="5dp"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:background="@drawable/boarder_green"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="80dp"/>
+
+</RelativeLayout>

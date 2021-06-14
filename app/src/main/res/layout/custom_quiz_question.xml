@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_custom_quiz_question"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/custom_quiz_question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_custom_quiz_question"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/custom_quiz_question_text_view_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/times"
+                android:gravity="left"
+                android:paddingHorizontal="5dp"
+                android:text="1.  Why was the OSI model developed?"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/custom_quiz_question_text_view_option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/custom_quiz_question_text_view_question"
+                android:layout_marginVertical="2dp"
+                android:fontFamily="@font/times"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:text="a.  The rate of data transfer was increasing exponentially"
+                android:textColor="@color/colorBlack"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/custom_quiz_question_text_view_option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/custom_quiz_question_text_view_option1"
+                android:layout_marginVertical="2dp"
+                android:fontFamily="@font/times"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:text="b.  Standards were needed to allow any two systems to communicate"
+                android:textColor="@color/colorBlack"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/custom_quiz_question_text_view_option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/custom_quiz_question_text_view_option2"
+                android:layout_marginVertical="2dp"
+                android:fontFamily="@font/times"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:text="c.  Manufacturers disliked the TCP/IP protocol suite."
+                android:textColor="@color/colorBlack"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/custom_quiz_question_text_view_option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/custom_quiz_question_text_view_option3"
+                android:layout_marginVertical="2dp"
+                android:fontFamily="@font/times"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:text="d.  None of the above"
+                android:textColor="@color/colorBlack"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/custom_quiz_question_btn_skip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boarder_green"
+            android:text="Skip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/custom_quiz_question_btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boarder_green"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

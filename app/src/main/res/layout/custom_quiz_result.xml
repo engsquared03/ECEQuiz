@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_custom_quiz_result"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/custom_quiz_text_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_custom_quiz_result"
+        android:fontFamily="@font/bookos"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:text="Score"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/custom_quiz_result_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_quiz_text_score"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bookos"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:text="50 / 50"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/custom_quiz_result_score_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:paddingLeft="5dp"
+        android:layout_below="@id/custom_quiz_result_score"
+        android:textSize="10sp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/acme_regular"
+        />
+
+    <TextView
+        android:id="@+id/custom_quiz_result_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_quiz_result_score_s"
+        android:fontFamily="@font/bookos"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/colorBlack"
+        android:text="General Engineering and Applied Sciences"
+        android:textSize="13sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_custom_quiz_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_quiz_result_subject"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>

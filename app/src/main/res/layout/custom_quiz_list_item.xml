@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cq_list_item_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/acme_regular"
+                android:text="General Engineering and Applied Sciences"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/cq_list_item_quiz_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Sample Quiz"
+                android:textSize="11sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cq_list_item_noq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme_regular"
+            android:text="20"
+            android:gravity="right"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

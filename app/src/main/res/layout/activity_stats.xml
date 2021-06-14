@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StatsActivity">
+
+
+    <include
+        android:id="@+id/toolbar_stats"
+        layout="@layout/toolbar"/>
+
+    <Button
+        android:id="@+id/stats_button_performance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Performance Statistics"
+        android:gravity="center"
+        android:background="@drawable/boarder_green"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:fontFamily="@font/acme_regular"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/stats_button_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Questions Statistics"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/boarder_green"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/acme_regular"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomQuizListActivity">
+
+    <include
+        android:id="@+id/toolbar_custom_quiz_list"
+        layout="@layout/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_custom_quiz_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_custom_quiz_list"
+        android:layout_marginBottom="70dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/button_create_custom_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boarder_green"
+        android:fontFamily="@font/acme_regular"
+        android:text="Create Custom Quiz"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"/>
+
+</RelativeLayout>

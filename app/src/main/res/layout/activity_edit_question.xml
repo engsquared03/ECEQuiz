@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditQuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_edit_question"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme_regular"
+                android:text="Question:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boarder_darker_gray"
+                android:minHeight="100dp"
+                android:gravity="start"
+                android:padding="6dp"
+                android:fontFamily="@font/times"
+                android:text="Why was the OSI model developed?"
+                android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Option 1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/acme_regular"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/edit_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boarder_darker_gray"
+                    android:padding="5dp"
+                    android:fontFamily="@font/times"
+                    android:text="A. "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Option 2"
+                    android:fontFamily="@font/acme_regular"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/edit_option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boarder_darker_gray"
+                    android:padding="5dp"
+                    android:fontFamily="@font/times"
+                    android:text="B. "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Option 3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/acme_regular"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/edit_option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boarder_darker_gray"
+                    android:padding="5dp"
+                    android:fontFamily="@font/times"
+                    android:text="C. "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Option 4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/acme_regular"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/edit_option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boarder_darker_gray"
+                    android:padding="5dp"
+                    android:fontFamily="@font/times"
+                    android:text="D. "
+                    android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
